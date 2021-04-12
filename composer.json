@@ -1,0 +1,46 @@
+{
+  "name": "runtothefather/doctrine-mongodb-psalm-plugin",
+  "description": "Stubs to let Psalm understand Doctrine MongoDb ODM better",
+  "keywords": ["php", "code", "inspection", "doctrine", "odm", "psalm", "mongodb", "plugin", "psalm-plugin", "static analysis", "static-analysis", "extension"],
+  "type": "psalm-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Evgeny Savich",
+      "email": "jack.savich@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "vimeo/psalm": "^4.0",
+    "doctrine/mongodb-odm": "^2.0"
+  },
+  "extra": {
+    "psalm" : {
+      "pluginClass": "RunToTheFather\\DoctrineMongoDbPsalmPlugin\\Plugin"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "RunToTheFather\\DoctrineMongoDbPsalmPlugin\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RunToTheFather\\DoctrineMongoDbPsalmPlugin\\Tests\\": [
+        "tests/_support",
+        "tests/acceptance"
+      ]
+    }
+  },
+  "require-dev": {
+    "codeception/codeception": "^4.0",
+    "weirdan/codeception-psalm-module": "^0.9.1"
+  },
+  "scripts": {
+    "check": [
+      "@test"
+    ],
+    "test": "codecept --colors run -v"
+  }
+}

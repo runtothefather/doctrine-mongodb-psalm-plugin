@@ -1,0 +1,28 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Doctrine\ODM\MongoDB\Query;
+
+use Doctrine\ODM\MongoDB\Mapping\ClassMetadata;
+use Exception;
+use IteratorAggregate;
+use Traversable;
+
+/**
+ * @template T
+ */
+final class Query implements IteratorAggregate
+{
+    /**
+     * @psalm-var ClassMetadata<T>
+     */
+    private $class;
+
+    /**
+     * @return T|null
+     */
+    public function getSingleResult()
+    {
+    }
+}

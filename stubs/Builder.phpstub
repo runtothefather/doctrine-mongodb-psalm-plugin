@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Doctrine\ODM\MongoDB\Query;
+
+use Doctrine\ODM\MongoDB\Mapping\ClassMetadata;
+
+/**
+ * @template T
+ */
+class Builder
+{
+    /**
+     * @psalm-var ClassMetadata<T>
+     */
+    private $class;
+    
+    /**
+     * @psalm-param class-string<T> $documentName
+     * @param string[]|string|null $documentName
+     */
+    public function __construct(DocumentManager $dm, $documentName = null)
+    {
+    }
+}
