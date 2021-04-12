@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": "^7.4",
+    "php": "^7.4 || ^8.0",
     "vimeo/psalm": "^4.0",
     "doctrine/mongodb-odm": "^2.0"
   },
