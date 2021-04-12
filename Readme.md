@@ -1,3 +1,5 @@
+![build](https://github.com/runtothefather/doctrine-mongodb-psalm-plugin/actions/workflows/php.yml/badge.svg)
+
 # doctrine-mongodb-psalm-plugin
 
 A Doctrine plugin for [Psalm](https://github.com/vimeo/psalm) (requires Psalm v4).
