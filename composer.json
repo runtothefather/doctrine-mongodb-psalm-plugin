@@ -34,8 +34,8 @@
     }
   },
   "require-dev": {
-    "codeception/codeception": "^4.0",
-    "weirdan/codeception-psalm-module": "^0.13"
+    "codeception/codeception": "^5.0",
+    "weirdan/codeception-psalm-module": "^0.14"
   },
   "scripts": {
     "check": [

@@ -74,6 +74,6 @@ Feature: Query
       """
     When I run Psalm
     Then I see these errors
-      | Type            | Message                                                                    |
-      | InvalidArgument | Argument 1 of acceptsI expects I, array<array-key, mixed>\|object provided |
+      | Type            | Message                                                                     |
+      | InvalidArgument | Argument 1 of acceptsI expects I, but array<string, mixed>\|object provided |
     And I see no other errors
