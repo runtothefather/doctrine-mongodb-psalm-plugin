@@ -1,4 +1,4 @@
-<?php  //[STAMP] 4a63472d31eb199db2ed95e10d6ffbe0
+<?php  //[STAMP] 11590c5844a87b5c5d3e421455dbc6f0
 // phpcs:ignoreFile
 namespace RunToTheFather\DoctrineODMPsalmPlugin\Tests\_generated;
 
